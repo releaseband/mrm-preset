@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/releaseband/mrm-preset/compare/v1.1.4...v1.1.5) (2022-02-01)
+
+
+### Bug Fixes
+
+* **semantic-release:** replace save template on copyFiles ([fc18c72](https://github.com/releaseband/mrm-preset/commit/fc18c7256d9f3f0fb197e3bef4560c2c09f48195))
+
 ## [1.1.4](https://github.com/releaseband/mrm-preset/compare/v1.1.3...v1.1.4) (2022-02-01)
 
 
