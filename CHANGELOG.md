@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/releaseband/mrm-preset/compare/v1.1.0...v1.1.1) (2022-02-01)
+
+
+### Bug Fixes
+
+* fix config and package files ([0b29531](https://github.com/releaseband/mrm-preset/commit/0b29531d13200f2f21f16a6681ff27595d8b22f6))
+
 # [1.1.0](https://github.com/releaseband/mrm-preset/compare/v1.0.0...v1.1.0) (2022-02-01)
 
 
