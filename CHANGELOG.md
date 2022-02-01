@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/releaseband/mrm-preset/compare/v1.1.3...v1.1.4) (2022-02-01)
+
+
+### Bug Fixes
+
+* **semantic-release:** remove copyFiles for templates ([535c4ee](https://github.com/releaseband/mrm-preset/commit/535c4ee33b6aa1d0fcefb7c621044768d6dc480b))
+
 ## [1.1.3](https://github.com/releaseband/mrm-preset/compare/v1.1.2...v1.1.3) (2022-02-01)
 
 
