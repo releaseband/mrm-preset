@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/releaseband/mrm-preset/compare/v1.1.2...v1.1.3) (2022-02-01)
+
+
+### Bug Fixes
+
+* **semantic-release:** revert template without apply ([8e8fa6f](https://github.com/releaseband/mrm-preset/commit/8e8fa6f25313052de7ad289b2e257a307ad50821))
+
 ## [1.1.2](https://github.com/releaseband/mrm-preset/compare/v1.1.1...v1.1.2) (2022-02-01)
 
 
