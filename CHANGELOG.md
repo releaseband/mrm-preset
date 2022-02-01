@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/releaseband/mrm-preset/compare/v1.1.5...v1.2.0) (2022-02-01)
+
+
+### Features
+
+* **prettier:** add prettier task ([538d3ca](https://github.com/releaseband/mrm-preset/commit/538d3ca3e95a5ee8b1189d9af46e92600cc051d0))
+
 ## [1.1.5](https://github.com/releaseband/mrm-preset/compare/v1.1.4...v1.1.5) (2022-02-01)
 
 
