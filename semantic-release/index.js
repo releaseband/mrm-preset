@@ -7,12 +7,12 @@ const releaseWorkflowFile = "release.yml";
 module.exports = function task() {
   const packages = ["@releaseband/semantic-release-npm-github-config"];
 
-  copyFiles(path.join(__dirname, "templates", configFile), configFile);
+  copyFiles(path.join(__dirname, "templates", configFile), configFile).save();
 
-  copyFiles(
-    path.join(__dirname, "templates", releaseWorkflowFile),
+  template(
     path.join(".github", "workflows", releaseWorkflowFile),
-  );
+    path.join(__dirname, "templates", releaseWorkflowFile)
+  ).save();
 
   install(packages);
 };
