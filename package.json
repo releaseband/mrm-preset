@@ -1,0 +1,40 @@
+{
+  "name": "@releaseband/mrm-preset",
+  "version": "0.0.0-semantic-release",
+  "description": "mrm preset",
+  "author": "releaseband",
+  "license": "MIT",
+  "main": "config.json",
+  "scripts": {
+    "commit": "cz"
+  },
+  "dependencies": {
+    "mrm-core": "^6.1.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/cz-commitlint": "^16.1.0",
+    "@releaseband/commitlint-config": "^0.2.0",
+    "@releaseband/semantic-release-npm-github-config": "^1.0.0",
+    "commitizen": "^4.2.4",
+    "semantic-release": "^19.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "config.json",
+    "*/index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/releaseband/mrm-preset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/releaseband/mrm-preset/issues"
+  },
+  "homepage": "https://github.com/releaseband/mrm-preset#readme"
+}
