@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/releaseband/mrm-preset/compare/v1.1.1...v1.1.2) (2022-02-01)
+
+
+### Bug Fixes
+
+* replace template copyFiles ([e08e6d5](https://github.com/releaseband/mrm-preset/commit/e08e6d539200785a3d443d23275a16898d8ee163))
+
 ## [1.1.1](https://github.com/releaseband/mrm-preset/compare/v1.1.0...v1.1.1) (2022-02-01)
 
 
