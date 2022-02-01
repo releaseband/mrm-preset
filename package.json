@@ -24,7 +24,8 @@
   },
   "files": [
     "config.json",
-    "*/index.js"
+    "*/index.js",
+    "*/templates"
   ],
   "publishConfig": {
     "access": "public"
