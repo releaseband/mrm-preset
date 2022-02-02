@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/releaseband/mrm-preset/compare/v1.3.0...v1.3.1) (2022-02-02)
+
+
+### Bug Fixes
+
+* **commitlint:** add commitlint in init config ([4817f23](https://github.com/releaseband/mrm-preset/commit/4817f23ef9e1c0a1dc10b3b8795d0d95385ee8b6))
+
 # [1.3.0](https://github.com/releaseband/mrm-preset/compare/v1.2.0...v1.3.0) (2022-02-02)
 
 
