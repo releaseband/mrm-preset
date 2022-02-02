@@ -12,24 +12,24 @@ module.exports = async function task() {
   install(packages);
 
   try {
-    const { stdout } = await execa("npx", ["husky", "install"]);
-    console.log(stdout);
+    let subprocess = await execa("npx", ["husky", "install"]);
+    console.log(subprocess.stdout);
 
-    const { stdout } = await execa("npx", [
+    subprocess = await execa("npx", [
       "husky",
       "add",
       ".husky/pre-commit",
       "npx --no-install lint-staged",
     ]);
-    console.log(stdout);
+    console.log(subprocess.stdout);
 
-    const { stdout } = await execa("npx", [
+    subprocess = await execa("npx", [
       "husky",
       "add",
       ".husky/prepare-commit-msg",
       "exec < /dev/tty && git cz --hook || true",
     ]);
-    console.log(stdout);
+    console.log(subprocess.stdout);
   } catch (error) {
     throw new Error(error);
   }
