@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/releaseband/mrm-preset/compare/v1.2.0...v1.3.0) (2022-02-02)
+
+
+### Features
+
+* add commitlint task ([a10d788](https://github.com/releaseband/mrm-preset/commit/a10d788bbdc910389053e81ce43ef149a3d12be9))
+
 # [1.2.0](https://github.com/releaseband/mrm-preset/compare/v1.1.5...v1.2.0) (2022-02-01)
 
 
