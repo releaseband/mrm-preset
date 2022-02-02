@@ -1,5 +1,5 @@
 {
   "aliases": {
-    "init": ["gitignore", "commitlint", "prettier", "semantic-release", "husky"]
+    "init": ["gitignore", "commitlint", "prettier", "semantic-release"]
   }
 }
