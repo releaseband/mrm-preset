@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/releaseband/mrm-preset/compare/v1.4.0...v1.4.1) (2022-02-02)
+
+
+### Bug Fixes
+
+* **husky:** add subprocess variable for execa ([aa2787a](https://github.com/releaseband/mrm-preset/commit/aa2787a54ecdfa287d169d57a774b799a9006caf))
+
 # [1.4.0](https://github.com/releaseband/mrm-preset/compare/v1.3.1...v1.4.0) (2022-02-02)
 
 
