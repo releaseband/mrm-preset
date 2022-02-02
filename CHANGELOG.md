@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/releaseband/mrm-preset/compare/v1.4.1...v1.4.2) (2022-02-02)
+
+
+### Bug Fixes
+
+* disable husky task ([e595336](https://github.com/releaseband/mrm-preset/commit/e5953360d309fad498830a0ebf1535ca0db71f9c))
+
 ## [1.4.1](https://github.com/releaseband/mrm-preset/compare/v1.4.0...v1.4.1) (2022-02-02)
 
 
