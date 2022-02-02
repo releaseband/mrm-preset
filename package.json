@@ -9,6 +9,7 @@
     "commit": "cz"
   },
   "dependencies": {
+    "execa": "^6.0.0",
     "mrm-core": "^6.1.7"
   },
   "devDependencies": {
