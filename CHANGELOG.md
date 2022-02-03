@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/releaseband/mrm-preset/compare/v1.4.2...v1.5.0) (2022-02-03)
+
+
+### Features
+
+* add eslint task ([21b1aed](https://github.com/releaseband/mrm-preset/commit/21b1aed6c6f3b04c95984d5859d3cd46e1758d30))
+
 ## [1.4.2](https://github.com/releaseband/mrm-preset/compare/v1.4.1...v1.4.2) (2022-02-02)
 
 
