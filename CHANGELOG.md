@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/releaseband/mrm-preset/compare/v1.5.0...v1.5.1) (2022-02-03)
+
+
+### Bug Fixes
+
+* add utils.js to files package ([3f982d0](https://github.com/releaseband/mrm-preset/commit/3f982d0b9565f8f55ece8a48840bc0b6f6bc260f))
+
 # [1.5.0](https://github.com/releaseband/mrm-preset/compare/v1.4.2...v1.5.0) (2022-02-03)
 
 
