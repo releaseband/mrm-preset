@@ -1,18 +1,15 @@
-const path = require("path");
-const { install, copyFiles } = require("mrm-core");
+const path = require('path');
+const { install, copyFiles } = require('mrm-core');
 
-const configFile = "release.config.js";
-const releaseWorkflowFile = ".github/workflows/release.yml";
+const configFile = 'release.config.js';
+const releaseWorkflowFile = '.github/workflows/release.yml';
 
-const packages = ["@releaseband/semantic-release-npm-github-config"];
+const packages = ['@releaseband/semantic-release-npm-github-config'];
 
 module.exports = function task() {
-  copyFiles(path.join(__dirname, "templates"), [
-    configFile,
-    releaseWorkflowFile,
-  ]);
+  copyFiles(path.join(__dirname, 'templates'), [configFile, releaseWorkflowFile]);
 
   install(packages);
 };
 
-module.exports.description = "Adds semantic-release";
+module.exports.description = 'Adds semantic-release';
