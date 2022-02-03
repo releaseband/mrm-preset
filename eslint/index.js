@@ -7,11 +7,10 @@ const configFile = '.eslintrc.js';
 const configPackage = '@releaseband/eslint-config';
 
 module.exports = function task() {
-  copyFiles(path.join(__dirname, 'templates'), [configFile]);
+  copyFiles(path.join(__dirname, 'templates'), configFile);
 
   const pkg = packageJson();
-  pkg.appendScript('lint', 'eslint --ext .js --ignore-path ./.gitignore .');
-  pkg.appendScript('lint:fix', 'npm run lint --  --fix');
+  pkg.appendScript('lint', 'eslint . --ext .js --fix --ignore-path ./.gitignore');
   pkg.save();
 
   install(configPackage);

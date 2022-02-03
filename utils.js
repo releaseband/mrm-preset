@@ -1,6 +1,11 @@
 const { execSync } = require('child_process');
 
-// eslint-disable-next-line import/prefer-default-export
+function npx(command) {
+  execSync(`npx ${command}`, { stdio: 'inherit' });
+}
+
+module.exports.npx = npx;
+
 module.exports.installPeerDeps = function installPeerDeps(pkg) {
-  execSync(`npx install-peerdeps --dev ${pkg}`, { stdio: 'inherit' });
+  npx(`install-peerdeps --dev ${pkg}`);
 };

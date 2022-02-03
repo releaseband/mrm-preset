@@ -1,15 +1,13 @@
 const path = require('path');
 const { packageJson, install, copyFiles } = require('mrm-core');
+const { installPeerDeps } = require('../utils');
 
 const commitlintConfigFile = 'commitlint.config.js';
 const commitizenConfigFile = '.cz.json';
 
-const packages = [
-  '@commitlint/cli',
-  '@commitlint/cz-commitlint',
-  'commitizen',
-  '@releaseband/commitlint-config',
-];
+const configPackage = '@releaseband/commitlint-config';
+
+const packages = ['@commitlint/cz-commitlint', 'commitizen', configPackage];
 
 module.exports = function task() {
   copyFiles(path.join(__dirname, 'templates'), [commitlintConfigFile, commitizenConfigFile]);
@@ -19,6 +17,8 @@ module.exports = function task() {
   pkg.save();
 
   install(packages);
+
+  installPeerDeps(configPackage);
 };
 
 module.exports.description = 'Adds commitlint';

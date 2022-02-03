@@ -10,9 +10,11 @@
     "format": "prettier --write --ignore-path ./.gitignore .",
     "lint": "eslint --ext .js --ignore-path ./.gitignore .",
     "lint:fix": "npm run lint --  --fix",
-    "exec": "node ./exec.js"
+    "exec": "node ./exec.js",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "husky": "^7.0.4",
     "mrm-core": "^6.1.7"
   },
   "devDependencies": {
@@ -20,6 +22,7 @@
     "@commitlint/cz-commitlint": "^16.1.0",
     "@releaseband/commitlint-config": "^0.2.0",
     "@releaseband/eslint-config": "^0.2.0",
+    "@releaseband/lint-staged-config": "^0.2.1",
     "@releaseband/prettier-config": "^0.2.0",
     "@releaseband/semantic-release-npm-github-config": "^1.0.0",
     "commitizen": "^4.2.4",
@@ -28,6 +31,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sonarjs": "^0.11.0",
+    "lint-staged": "^11.2.6",
     "prettier": "^2.5.1",
     "semantic-release": "^19.0.2"
   },
