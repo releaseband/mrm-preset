@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/releaseband/mrm-preset/compare/v1.5.1...v1.5.2) (2022-02-03)
+
+
+### Bug Fixes
+
+* fix export in utils ([5620ebb](https://github.com/releaseband/mrm-preset/commit/5620ebb602c5363fd9da0c941b83a308e045a9b1))
+
 ## [1.5.1](https://github.com/releaseband/mrm-preset/compare/v1.5.0...v1.5.1) (2022-02-03)
 
 
