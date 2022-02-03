@@ -36,6 +36,7 @@
   },
   "files": [
     "config.json",
+    "utils.js",
     "*/index.js",
     "*/templates"
   ],
