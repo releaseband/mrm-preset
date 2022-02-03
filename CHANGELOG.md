@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/releaseband/mrm-preset/compare/v1.5.2...v1.6.0) (2022-02-03)
+
+
+### Features
+
+* add lint-staged ([0c841e5](https://github.com/releaseband/mrm-preset/commit/0c841e55e228bc349a548dbbcb4e801a322e4682))
+
 ## [1.5.2](https://github.com/releaseband/mrm-preset/compare/v1.5.1...v1.5.2) (2022-02-03)
 
 
