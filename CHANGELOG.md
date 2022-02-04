@@ -1,3 +1,11 @@
+## [1.8.1](https://github.com/releaseband/mrm-preset/compare/v1.8.0...v1.8.1) (2022-02-04)
+
+
+### Bug Fixes
+
+* **commitlint:** add commit-msg hook for commitlint ([07a11e1](https://github.com/releaseband/mrm-preset/commit/07a11e129a1573821d7b82f6d70c77c1d6b7b0cc))
+* edit script task ([0675091](https://github.com/releaseband/mrm-preset/commit/0675091e341e6756bd9b10e74ad3401df26a4540))
+
 # [1.8.0](https://github.com/releaseband/mrm-preset/compare/v1.7.1...v1.8.0) (2022-02-04)
 
 
