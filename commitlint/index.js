@@ -11,7 +11,9 @@ const commitlintConfigPackage = '@releaseband/commitlint-config';
 const packages = [commitlintConfigPackage, '@commitlint/cz-commitlint', 'commitizen'];
 
 module.exports = function task() {
-  copyFiles(path.join(__dirname, 'templates'), [commitlintConfigFile, commitizenConfigFile]);
+  copyFiles(path.join(__dirname, 'templates'), [commitlintConfigFile, commitizenConfigFile], {
+    overwrite: true,
+  });
 
   const pkg = packageJson();
   pkg.setScript('commit', 'cz');

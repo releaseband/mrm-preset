@@ -1,5 +1,5 @@
 const path = require('path');
-const { install, copyFiles, packageJson } = require('mrm-core');
+const { install, copyFiles, packageJson, lines } = require('mrm-core');
 const { installPeerDeps } = require('../utils');
 
 const configFile = '.markdownlint.json';
@@ -7,8 +7,10 @@ const ignoreFile = '.markdownlintignore';
 
 const configPackage = '@releaseband/markdownlint-config';
 
+const ignore = ['node_modules/', '.idea/', '.vscode/', '.history/', 'CHANGELOG.md'];
+
 module.exports = function task() {
-  copyFiles(path.join(__dirname, 'templates'), [configFile, ignoreFile], { overwrite: true });
+  copyFiles(path.join(__dirname, 'templates'), [configFile], { overwrite: true });
 
   const pkg = packageJson();
   pkg.appendScript('markdownlint', "markdownlint '**/*.md' --fix");
@@ -17,6 +19,8 @@ module.exports = function task() {
   install(configPackage);
 
   installPeerDeps(configPackage);
+
+  lines(ignoreFile).add(ignore).save();
 };
 
 module.exports.description = 'Adds markdownlint';

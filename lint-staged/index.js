@@ -3,7 +3,7 @@ const { install, copyFiles } = require('mrm-core');
 const husky = require('husky');
 const { installPeerDeps } = require('../utils');
 
-const configFile = 'lint-staged.config.js';
+const configFile = '.lintstagedrc.js';
 
 const configPackage = '@releaseband/lint-staged-config';
 
