@@ -1,5 +1,13 @@
 {
   "aliases": {
-    "init": ["gitignore", "commitlint", "prettier", "eslint", "lint-staged", "semantic-release"]
+    "init": [
+      "gitignore",
+      "commitlint",
+      "prettier",
+      "eslint",
+      "markdownlint",
+      "lint-staged",
+      "semantic-release"
+    ]
   }
 }
