@@ -1,3 +1,15 @@
+# [1.7.0](https://github.com/releaseband/mrm-preset/compare/v1.6.0...v1.7.0) (2022-02-04)
+
+
+### Bug Fixes
+
+* add ignore files for eslint and prettier task ([7efc0ae](https://github.com/releaseband/mrm-preset/commit/7efc0ae2c18fa290a6d293707ea3bf40dd98bbdd))
+
+
+### Features
+
+* add markdownlint task ([52c97fd](https://github.com/releaseband/mrm-preset/commit/52c97fd5095b78c27161f3dc65dae64b56e96c42))
+
 # [1.6.0](https://github.com/releaseband/mrm-preset/compare/v1.5.2...v1.6.0) (2022-02-03)
 
 
