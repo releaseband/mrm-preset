@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/releaseband/mrm-preset/compare/v1.7.0...v1.7.1) (2022-02-04)
+
+
+### Bug Fixes
+
+* replace appendScript on setScript in prettier task ([7fb9dbc](https://github.com/releaseband/mrm-preset/commit/7fb9dbcabf29a480339453cc848208ae1081d739))
+
 # [1.7.0](https://github.com/releaseband/mrm-preset/compare/v1.6.0...v1.7.0) (2022-02-04)
 
 
