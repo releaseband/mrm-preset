@@ -11,7 +11,7 @@ module.exports = function task() {
   copyFiles(path.join(__dirname, 'templates'), [configFile, ignoreFile], { overwrite: true });
 
   const pkg = packageJson();
-  pkg.appendScript('lint', 'eslint . --ext .js --fix');
+  pkg.setScript('lint', 'eslint . --ext .js --fix');
   pkg.save();
 
   install(configPackage);
