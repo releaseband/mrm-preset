@@ -11,7 +11,7 @@ module.exports = function task() {
   copyFiles(path.join(__dirname, 'templates'), [configFile, ignoreFile], { overwrite: true });
 
   const pkg = packageJson();
-  pkg.appendScript('prettier', 'prettier . --write --ignore-unknown');
+  pkg.setScript('prettier', 'prettier . --write --ignore-unknown');
   pkg.save();
 
   install(configPackage);
