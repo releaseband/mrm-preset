@@ -11,7 +11,6 @@ module.exports = function task() {
   copyFiles(path.join(__dirname, 'templates'), [configFile, ignoreFile], { overwrite: true });
 
   const pkg = packageJson();
-  pkg.removeScript('markdownlint');
   pkg.appendScript('markdownlint', "markdownlint '**/*.md' --fix");
   pkg.save();
 

@@ -17,7 +17,7 @@ module.exports = function task() {
   // Install husky
   husky.install();
   // Set lint-staged config
-  husky.add('.husky/pre-commit', 'npx lint-staged');
+  husky.add('.husky/pre-commit', 'npx --no lint-staged');
 };
 
 module.exports.description = 'Adds lint-staged';

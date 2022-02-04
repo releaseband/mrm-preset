@@ -3,14 +3,15 @@ const { packageJson, install, copyFiles } = require('mrm-core');
 const { installPeerDeps } = require('../utils');
 
 const configFile = '.eslintrc.js';
+const ignoreFile = '.eslintignore';
 
 const configPackage = '@releaseband/eslint-config';
 
 module.exports = function task() {
-  copyFiles(path.join(__dirname, 'templates'), configFile);
+  copyFiles(path.join(__dirname, 'templates'), [configFile, ignoreFile], { overwrite: true });
 
   const pkg = packageJson();
-  pkg.appendScript('lint', 'eslint . --ext .js --fix --ignore-path ./.gitignore');
+  pkg.appendScript('lint', 'eslint . --ext .js --fix');
   pkg.save();
 
   install(configPackage);
