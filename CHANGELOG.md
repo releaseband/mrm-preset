@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/releaseband/mrm-preset/compare/v1.7.1...v1.8.0) (2022-02-04)
+
+
+### Features
+
+* add husky task ([9a32722](https://github.com/releaseband/mrm-preset/commit/9a32722d45eeda84972c63750e4d094884873f7f))
+
 ## [1.7.1](https://github.com/releaseband/mrm-preset/compare/v1.7.0...v1.7.1) (2022-02-04)
 
 
