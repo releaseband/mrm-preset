@@ -14,9 +14,6 @@ module.exports = function task() {
 
   installPeerDeps(configPackage);
 
-  // Install husky
-  husky.install();
-  // Set lint-staged config
   husky.add('.husky/pre-commit', 'npx --no lint-staged');
 };
 
