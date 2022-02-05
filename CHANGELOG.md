@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/releaseband/mrm-preset/compare/v1.9.0...v1.9.1) (2022-02-05)
+
+
+### Bug Fixes
+
+* **github-action:** move templates ([45cdfd4](https://github.com/releaseband/mrm-preset/commit/45cdfd4f33ae132940cf8cebd59d9e0ba489f415))
+
 ## [1.8.1](https://github.com/releaseband/mrm-preset/compare/v1.8.0...v1.8.1) (2022-02-04)
 
 
