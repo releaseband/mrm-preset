@@ -7,30 +7,32 @@
   "main": "config.json",
   "scripts": {
     "commit": "cz",
-    "format": "prettier --write --ignore-path ./.gitignore .",
-    "lint": "eslint --ext .js --ignore-path ./.gitignore .",
-    "lint:fix": "npm run lint --  --fix",
-    "prepare": "husky install"
+    "prettier": "prettier . --write --ignore-unknown",
+    "lint": "eslint . --ext .js --fix",
+    "markdownlint": "markdownlint '**/*.md' --fix",
+    "prepare": "is-ci || husky install"
   },
   "dependencies": {
-    "husky": "^7.0.4",
     "mrm-core": "^6.1.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/cz-commitlint": "^16.1.0",
-    "@releaseband/commitlint-config": "^0.2.0",
-    "@releaseband/eslint-config": "^0.2.0",
-    "@releaseband/lint-staged-config": "^0.2.1",
-    "@releaseband/prettier-config": "^0.2.0",
-    "@releaseband/semantic-release-npm-github-config": "^1.0.0",
+    "@releaseband/commitlint-config": "^0.3.2",
+    "@releaseband/eslint-config": "^0.2.2",
+    "@releaseband/lint-staged-config": "^0.2.2",
+    "@releaseband/markdownlint-config": "^1.0.2",
+    "@releaseband/prettier-config": "^0.2.1",
+    "@releaseband/semantic-release-npm-github-config": "^1.0.1",
     "commitizen": "^4.2.4",
     "eslint": "^8.8.0",
-    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sonarjs": "^0.11.0",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
     "lint-staged": "^11.2.6",
+    "markdownlint-cli": "^0.30.0",
     "prettier": "^2.5.1",
     "semantic-release": "^19.0.2"
   },
