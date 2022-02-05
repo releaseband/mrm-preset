@@ -8,7 +8,8 @@
       "eslint",
       "markdownlint",
       "lint-staged",
-      "semantic-release"
+      "semantic-release",
+      "github-action"
     ]
   }
 }

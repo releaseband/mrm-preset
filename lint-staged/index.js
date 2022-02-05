@@ -1,6 +1,6 @@
 const path = require('path');
-const { install, copyFiles } = require('mrm-core');
 const husky = require('husky');
+const { install, copyFiles } = require('mrm-core');
 const { installPeerDeps } = require('../utils');
 
 const configFile = '.lintstagedrc.js';
@@ -8,7 +8,7 @@ const configFile = '.lintstagedrc.js';
 const configPackage = '@releaseband/lint-staged-config';
 
 module.exports = function task() {
-  copyFiles(path.join(__dirname, 'templates'), configFile);
+  copyFiles(path.join(__dirname, 'templates'), configFile, { overwrite: true });
 
   install(configPackage);
 

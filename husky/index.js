@@ -1,5 +1,5 @@
-const { packageJson, install } = require('mrm-core');
 const husky = require('husky');
+const { packageJson, install } = require('mrm-core');
 
 const packages = ['husky', 'is-ci'];
 

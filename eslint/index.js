@@ -10,7 +10,7 @@ const configPackage = '@releaseband/eslint-config';
 const ignore = ['node_modules/', '.idea/', '.vscode/', '.history/'];
 
 module.exports = function task() {
-  copyFiles(path.join(__dirname, 'templates'), [configFile], { overwrite: true });
+  copyFiles(path.join(__dirname, 'templates'), configFile, { overwrite: true });
 
   const pkg = packageJson();
   pkg.setScript('lint', 'eslint . --ext .js --fix');
