@@ -1,6 +1,6 @@
 const path = require('path');
-const { packageJson, install, copyFiles } = require('mrm-core');
 const husky = require('husky');
+const { packageJson, install, copyFiles } = require('mrm-core');
 const { installPeerDeps } = require('../utils');
 
 const commitlintConfigFile = '.commitlintrc.js';
