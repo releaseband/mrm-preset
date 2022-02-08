@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/releaseband/mrm-preset/compare/v1.10.0...v1.11.0) (2022-02-08)
+
+
+### Features
+
+* add eslint-typescript task ([91da4e5](https://github.com/releaseband/mrm-preset/commit/91da4e52028fa1bc2dbdfb947d8e8b60afa01f81))
+
 # [1.10.0](https://github.com/releaseband/mrm-preset/compare/v1.9.2...v1.10.0) (2022-02-08)
 
 
