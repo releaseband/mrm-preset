@@ -1,12 +1,12 @@
 {
   "aliases": {
-    "init": [
+    "all": [
       "gitignore",
       "husky",
       "commitlint",
+      "markdownlint",
       "prettier",
       "eslint",
-      "markdownlint",
       "lint-staged",
       "semantic-release",
       "github-action"

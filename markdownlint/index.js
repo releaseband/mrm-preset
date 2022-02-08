@@ -13,7 +13,7 @@ module.exports = function task() {
   copyFiles(path.join(__dirname, 'templates'), [configFile], { overwrite: true });
 
   const pkg = packageJson();
-  pkg.appendScript('markdownlint', "markdownlint '**/*.md' --fix");
+  pkg.setScript('markdownlint', "markdownlint '**/*.md' --fix");
   pkg.save();
 
   install(configPackage);
