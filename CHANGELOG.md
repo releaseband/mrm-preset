@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/releaseband/mrm-preset/compare/v1.9.2...v1.10.0) (2022-02-08)
+
+
+### Features
+
+* **add 'all' alias:** 'all' alias run all tasks ([4ea252d](https://github.com/releaseband/mrm-preset/commit/4ea252da8a5f712cb5df4451387b24072ddb048d))
+
 ## [1.9.2](https://github.com/releaseband/mrm-preset/compare/v1.9.1...v1.9.2) (2022-02-05)
 
 
