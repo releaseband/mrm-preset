@@ -5,6 +5,14 @@
 
 * **github-action:** move templates ([45cdfd4](https://github.com/releaseband/mrm-preset/commit/45cdfd4f33ae132940cf8cebd59d9e0ba489f415))
 
+# [1.9.0](https://github.com/releaseband/mrm-preset/compare/v1.8.1...v1.9.0) (2022-02-05)
+
+
+### Features
+
+* add ci workflow ([d7727e7](https://github.com/releaseband/mrm-preset/commit/d7727e773e0f53de2e0e5a3c4cfd9846bc506750))
+* add github-action ([5ffa62e](https://github.com/releaseband/mrm-preset/commit/5ffa62e7e96d6acd0fb71be7cbd143c297009c56))
+
 ## [1.8.1](https://github.com/releaseband/mrm-preset/compare/v1.8.0...v1.8.1) (2022-02-04)
 
 

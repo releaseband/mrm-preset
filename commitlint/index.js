@@ -23,7 +23,7 @@ module.exports = function task() {
 
   installPeerDeps(commitlintConfigPackage);
 
-  husky.add('.husky/commit-msg', 'npx --no -- commitlint --edit $1');
+  husky.set('.husky/commit-msg', 'npx --no -- commitlint --edit $1');
 };
 
 module.exports.description = 'Adds commitlint';
