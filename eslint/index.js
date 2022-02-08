@@ -2,13 +2,15 @@ const path = require('path');
 const { packageJson, install, template, lines } = require('mrm-core');
 const { installPeerDeps } = require('../utils');
 
-const configFile = 'template.eslintrc.js';
+const configFile = '.eslintrc.js';
 const ignoreFile = '.eslintignore';
 
 const ignore = ['node_modules/', '.idea/', '.vscode/', '.history/'];
 
 module.exports = function task({ eslintConfig }) {
-  template(configFile, path.join(__dirname, 'templates')).apply({ config: eslintConfig }).save();
+  template(configFile, path.join(__dirname, 'templates', `template${configFile}`))
+    .apply({ config: eslintConfig })
+    .save();
 
   let ext = '.js';
   if (eslintConfig.includes('typescript')) {
