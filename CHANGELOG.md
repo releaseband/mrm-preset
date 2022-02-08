@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/releaseband/mrm-preset/compare/v1.11.0...v1.11.1) (2022-02-08)
+
+
+### Bug Fixes
+
+* correct filename eslint config ([a228459](https://github.com/releaseband/mrm-preset/commit/a2284599e4b64b1ace6cd43a2acfd3b58f96284f))
+
 # [1.11.0](https://github.com/releaseband/mrm-preset/compare/v1.10.0...v1.11.0) (2022-02-08)
 
 
