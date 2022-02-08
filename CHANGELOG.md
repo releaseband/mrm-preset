@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/releaseband/mrm-preset/compare/v1.9.1...v1.9.2) (2022-02-05)
+
+
+### Bug Fixes
+
+* replace add husky hook on set husky hook ([7bb9bc3](https://github.com/releaseband/mrm-preset/commit/7bb9bc3c290e03694e4e5963bb5b69a2ad5907fb))
+
 ## [1.9.1](https://github.com/releaseband/mrm-preset/compare/v1.9.0...v1.9.1) (2022-02-05)
 
 
