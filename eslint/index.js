@@ -1,26 +1,36 @@
 const path = require('path');
-const { packageJson, install, copyFiles, lines } = require('mrm-core');
+const { packageJson, install, template, lines } = require('mrm-core');
 const { installPeerDeps } = require('../utils');
 
-const configFile = '.eslintrc.js';
+const configFile = 'template.eslintrc.js';
 const ignoreFile = '.eslintignore';
-
-const configPackage = '@releaseband/eslint-config';
 
 const ignore = ['node_modules/', '.idea/', '.vscode/', '.history/'];
 
-module.exports = function task() {
-  copyFiles(path.join(__dirname, 'templates'), configFile, { overwrite: true });
+module.exports = function task({ eslintConfig }) {
+  template(configFile, path.join(__dirname, 'templates')).apply({ config: eslintConfig }).save();
+
+  let ext = '.js';
+  if (eslintConfig.includes('typescript')) {
+    ext += ',.ts';
+  }
 
   const pkg = packageJson();
-  pkg.setScript('lint', 'eslint . --ext .js --fix');
+  pkg.setScript('lint', `eslint . --ext ${ext} --fix`);
   pkg.save();
 
-  install(configPackage);
+  install(eslintConfig);
 
-  installPeerDeps(configPackage);
+  installPeerDeps(eslintConfig);
 
   lines(ignoreFile).add(ignore).save();
 };
 
 module.exports.description = 'Adds eslint';
+module.exports.parameters = {
+  eslintConfig: {
+    type: 'input',
+    message: 'ESLint config shareable config',
+    default: '@releaseband/eslint-config',
+  },
+};

@@ -1,12 +1,23 @@
 {
   "aliases": {
-    "all": [
+    "js": [
       "gitignore",
       "husky",
       "commitlint",
       "markdownlint",
       "prettier",
       "eslint",
+      "lint-staged",
+      "semantic-release",
+      "github-action"
+    ],
+    "ts": [
+      "gitignore",
+      "husky",
+      "commitlint",
+      "markdownlint",
+      "prettier",
+      "eslint-typescript",
       "lint-staged",
       "semantic-release",
       "github-action"

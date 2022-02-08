@@ -24,7 +24,7 @@
     "@releaseband/lint-staged-config": "^1.0.0",
     "@releaseband/markdownlint-config": "^2.0.0",
     "@releaseband/prettier-config": "^1.0.0",
-    "@releaseband/semantic-release-npm-github-config": "^1.2.1",
+    "@releaseband/semantic-release-npm-github-config": "^1.2.2",
     "commitizen": "^4.2.4",
     "eslint": "^8.8.0",
     "eslint-plugin-import": "^2.25.4",
