@@ -18,6 +18,19 @@
       "markdownlint",
       "prettier",
       "eslint-typescript",
+      "typescript",
+      "lint-staged",
+      "semantic-release",
+      "github-action"
+    ],
+    "react": [
+      "gitignore",
+      "husky",
+      "commitlint",
+      "markdownlint",
+      "prettier",
+      "eslint-typescript-react",
+      "typescript",
       "lint-staged",
       "semantic-release",
       "github-action"

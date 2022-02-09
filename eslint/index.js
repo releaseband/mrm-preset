@@ -8,22 +8,37 @@ const ignoreFile = '.eslintignore';
 const ignore = ['node_modules/', '.idea/', '.vscode/', '.history/'];
 
 module.exports = function task({ eslintConfig }) {
-  template(configFile, path.join(__dirname, 'templates', `template${configFile}`))
+  const isTypeScript = eslintConfig.includes('typescript');
+
+  template(
+    configFile,
+    path.join(
+      __dirname,
+      'templates',
+      isTypeScript ? 'eslint-config-typescript.js' : 'eslint-config.js'
+    )
+  )
     .apply({ config: eslintConfig })
     .save();
 
   let ext = '.js';
-  if (eslintConfig.includes('typescript')) {
+  if (isTypeScript) {
     ext += ',.ts';
+
+    if (eslintConfig.includes('react')) {
+      ext += ',.jsx,.tsx';
+    }
   }
 
   const pkg = packageJson();
   pkg.setScript('lint', `eslint . --ext ${ext} --fix`);
   pkg.save();
 
-  install(eslintConfig);
+  const configPackage = `@releaseband/${eslintConfig}`;
 
-  installPeerDeps(eslintConfig);
+  install(configPackage);
+
+  installPeerDeps(configPackage);
 
   lines(ignoreFile).add(ignore).save();
 };
@@ -32,7 +47,7 @@ module.exports.description = 'Adds eslint';
 module.exports.parameters = {
   eslintConfig: {
     type: 'input',
-    message: 'ESLint config shareable config',
-    default: '@releaseband/eslint-config',
+    message: 'ESLint config shareable config from releaseband organization',
+    default: 'eslint-config',
   },
 };
