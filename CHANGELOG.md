@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/releaseband/mrm-preset/compare/v1.11.1...v1.12.0) (2022-02-09)
+
+
+### Features
+
+* add typescript task ([e1ad52d](https://github.com/releaseband/mrm-preset/commit/e1ad52df5a3e8bfda7740e2286b1f301aa317122))
+
 ## [1.11.1](https://github.com/releaseband/mrm-preset/compare/v1.11.0...v1.11.1) (2022-02-08)
 
 
