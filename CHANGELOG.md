@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/releaseband/mrm-preset/compare/v1.12.0...v1.13.0) (2022-02-10)
+
+
+### Features
+
+* add select workflow for lint and test ([3177322](https://github.com/releaseband/mrm-preset/commit/317732200869bee715a90e3b8a23541441456384))
+
 # [1.12.0](https://github.com/releaseband/mrm-preset/compare/v1.11.1...v1.12.0) (2022-02-09)
 
 
