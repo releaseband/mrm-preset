@@ -3,6 +3,7 @@ const { lines } = require('mrm-core');
 const remove = ['node_modules', 'package-lock.json'];
 const add = [
   'node_modules/',
+  'coverage/',
   '.DS_Store',
   'Thumbs.db',
   '.idea/',

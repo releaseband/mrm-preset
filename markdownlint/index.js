@@ -7,7 +7,7 @@ const ignoreFile = '.markdownlintignore';
 
 const configPackage = '@releaseband/markdownlint-config';
 
-const ignore = ['node_modules/', '.idea/', '.vscode/', '.history/', 'CHANGELOG.md'];
+const ignore = ['node_modules/', 'coverage/', '.idea/', '.vscode/', '.history/', 'CHANGELOG.md'];
 
 module.exports = function task() {
   copyFiles(path.join(__dirname, 'templates'), [configFile], { overwrite: true });

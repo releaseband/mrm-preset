@@ -5,7 +5,7 @@ const { installPeerDeps } = require('../utils');
 const configFile = '.eslintrc.js';
 const ignoreFile = '.eslintignore';
 
-const ignore = ['node_modules/', '.idea/', '.vscode/', '.history/'];
+const ignore = ['node_modules/', 'coverage/', '.idea/', '.vscode/', '.history/'];
 
 module.exports = function task({ eslintConfig }) {
   const isTypeScript = eslintConfig.includes('typescript');
